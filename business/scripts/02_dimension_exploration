@@ -1,0 +1,25 @@
+/*
+/== Dimensions Exploration ===================================\
+|  Purpose:                                                    |
+|    - Explore the structure of dimension tables               |
+|    - Review columns and metadata using basic SQL functions   |
+|                                                              |
+|  SQL Functions Used:                                         |
+|    - DISTINCT                                                |
+|    - ORDER BY                                                |
+\==============================================================/
+*/
+
+-- Retrieve a list of unique cities and countries from where shops originate
+SELECT DISTINCT 
+    city,
+    country
+FROM locations
+ORDER BY country;
+
+-- Retrieve a list of unique suppliers and coffee types
+SELECT DISTINCT 
+    supplier_name,
+    coffee_type 
+FROM suppliers
+ORDER BY coffee_type 
